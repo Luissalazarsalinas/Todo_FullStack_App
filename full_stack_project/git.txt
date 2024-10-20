@@ -1,0 +1,11 @@
+## Any comman of git
+
+# To create and change a new branch
+git switch -c <new_branch_name>
+# to add remote repository
+git remote add origin <url_remote_repo>
+# push your info code to the remote repository
+git push -u origin <branch name>
+# add readme file 
+git add Readme
+

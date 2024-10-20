@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', path='/css/base.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', path='/css/bootstrap.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoApp</title>
+</head>
+<!-- add the block content insaide bady - In this case we're saying, we want only each time we render a new 
+ page we want it to always use this layout and we want to render it inside  -->
+<body>
+    
+    {% include 'navbar.html' %}
+
+    {% block content %}
+
+    {% endblock %}
+    <!-- Insert the js code -->
+      <script src="{{ url_for('static', path='/js/jquery-slim.js') }}"></script>
+      <script src="{{ url_for('static', path='/js/popper.js') }}"></script>
+      <script src="{{ url_for('static', path='/js/bootstrap.js') }}"></script>
+      <!-- This is the last script to load because i need check of the id from the pages -->
+      <script src="{{ url_for('static', path='/js/base.js') }}" defer></script>
+</body>
+</html>

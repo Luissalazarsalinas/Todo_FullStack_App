@@ -1,0 +1,12 @@
+What is Jinja?
+
+- Fast, expressive and extensible template language
+- Able to write code similar to python in the DOM
+- The template is passed data to render within the final document.
+
+- Jinja use tags similar to HTML
+
+Example:
+<link rel= "stylesheet" type="text/css"
+  href="{{url_for('static',path='/todo/css/base.css')}}">
+</link>

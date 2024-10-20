@@ -1,0 +1,6 @@
+fastapi/
+Old_projects/
+__MACOSX/
+__pycache__
+.pytest_cache/
+.env
